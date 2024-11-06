@@ -15,7 +15,9 @@ In the `main` method, an example `inputArray` is provided, and the `findTopKNumb
 Lab 2b
 
 The ShareTrader class calculates the maximum profit from at most two stock market transactions (buying and selling). It uses two arrays, profitLeft[] and profitRight[], to track the maximum profit that can be achieved with one transaction up to each day and from each day onward.
+
 profitLeft[] stores the maximum profit for a transaction ending at each day by tracking the minimum price encountered so far.
+
 profitRight[] calculates the maximum profit for a transaction starting at each day by tracking the maximum price from the right.
 
 The final maximum profit is obtained by summing the values from both arrays for each day and choosing the highest sum. The algorithm runs in O(n) time, making it efficient for large datasets. The main method tests this with two example price arrays, showing how the maximum profit is computed.
